@@ -2,13 +2,12 @@
 # https://github.com/rapid7/metasploit-framework/blob/master/modules/payloads/stagers/windows/bind_tcp.rb
 
 
-class PayloadModule:
+class BindTCP:
 
     def __init__(self):
         self.name = "Bind TCP Stager (Stage 1)"
         self.description = "Binds to a user provided port and listens for\
             fun files :)"
-        self.cli_name = "bind_tcp"
         self.platform = "Windows"
         self.arch = "x86"
         self.lport = 4444
