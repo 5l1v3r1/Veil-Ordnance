@@ -11,12 +11,13 @@ import struct
 import sys
 
 
-class RevHTTP:
+class PayloadModule:
 
     def __init__(self):
         self.name = "Reverse HTTP Stager (Stage 1)"
         self.description = "Connects back to a handler to download and run\
             fun files over HTTP :)"
+        self.cli_name = "rev_http"
         self.platform = "Windows"
         self.arch = "x86"
         self.lport = 4444
