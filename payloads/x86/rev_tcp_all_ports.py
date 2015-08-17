@@ -8,12 +8,11 @@ import socket
 import sys
 
 
-class PayloadModule:
+class RevTCPAP:
 
     def __init__(self):
         self.name = "Reverse TCP All Ports Stager (Stage 1)"
         self.description = "Attempts to egress bust by trying all ports!"
-        self.cli_name = "rev_tcp_all_ports"
         self.platform = "Windows"
         self.arch = "x86"
         self.lport = 4444
